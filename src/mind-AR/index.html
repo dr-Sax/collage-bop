@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.0.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+    <!-- Import the custom video clip components -->
+    <script src="non-rectangular-video.js"></script>
+  </head>
+  <body>
+    <a-scene 
+      mindar-image="imageTargetSrc: ./targets.mind; maxTrack: 6" 
+      color-space="sRGB" 
+      renderer="colorManagement: true, physicallyCorrectLights" 
+      vr-mode-ui="enabled: false" 
+      device-orientation-permission-ui="enabled: false">
+      
+      <a-assets>
+        <video id="mspacman" autoplay loop muted playsinline crossorigin="anonymous" preload="auto" src="../assets/bird-flock.mp4"></video>
+        <video id="mrpacman" autoplay loop muted playsinline crossorigin="anonymous" preload="auto" src="../assets/whitney-spirals.mp4"></video>
+        <video id="glasses" autoplay loop muted playsinline crossorigin="anonymous" preload="auto" src="../assets/P-vid.mp4"></video>
+        <video id="duck" autoplay loop muted playsinline crossorigin="anonymous" preload="auto" src="../assets/giant-duck.mp4"></video>
+        <video id="slinky" autoplay loop muted playsinline crossorigin="anonymous" preload="auto" src="../assets/slinking.mp4"></video>
+        <video id="lightplay" autoplay loop muted playsinline crossorigin="anonymous" preload="auto" src="../assets/lightplay.mp4"></video>
+      </a-assets>
+
+      <a-camera 
+        position="0 0 0" 
+        look-controls="enabled: false" 
+        cursor="fuse: false; rayOrigin: mouse;" 
+        raycaster="far: 10000; objects: .clickable">
+      </a-camera>
+
+      <a-entity mindar-image-target="targetIndex: 0" marker-tracker="targetIndex: 0; name: glasses">
+        <a-entity
+          id="ms-pacman-plane" 
+          position="0 0 0"
+          video-clip = "points: 13.3,97.43, 40.02,45.18, 92.95,45.72, 66.16,97.32; src: #glasses">
+        </a-entity>
+      </a-entity>
+      
+      <a-entity mindar-image-target="targetIndex: 1" marker-tracker="targetIndex: 1; name: mrpacman">
+        <a-entity
+          id="mr-pacman-plane" 
+          position="0 0 0"
+          video-clip="points: 50,10, 70,30, 90,30, 60,50, 75,80, 50,65, 25,80, 40,50, 10,30, 30,30; src: #mrpacman">
+        </a-entity>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 2" marker-tracker="targetIndex: 2; name: lightplay">
+        <a-entity
+          id="mr-pacman-plane" 
+          position="0 0 0"
+          video-clip="points: 0.77,99.86, 47.71,1.06, 99.78,94.89; src: #lightplay">
+        </a-entity>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 3" marker-tracker="targetIndex: 3; name: slinky">
+        <a-entity
+          id="mr-pacman-plane" 
+          position="0 0 0"
+          video-clip="points: .23,99.17, 49.69,1.2, 98.97,97; src: #slinky">
+        </a-entity>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 4" marker-tracker="targetIndex: 4; name: duck">
+        <a-entity
+          id="mr-pacman-plane" 
+          position="0 0 0"
+          video-clip="points: 12.63,98.82, 48.69,30.01, 84.47,97; src: #duck">
+        </a-entity>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 5" marker-tracker="targetIndex: 5; name: mrpacman-5">
+        <a-entity
+          id="mr-pacman-plane" 
+          position="0 0 0"
+          video-clip="points: 50,10, 70,30, 90,30, 60,50, 75,80, 50,65, 25,80, 40,50, 10,30, 30,30; src: #mrpacman">
+        </a-entity>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 6" marker-tracker="targetIndex: 6; name: mrpacman-6">
+        <a-entity
+          id="mr-pacman-plane" 
+          position="0 0 0"
+          video-clip="points: 50,10, 70,30, 90,30, 60,50, 75,80, 50,65, 25,80, 40,50, 10,30, 30,30; src: #mrpacman">
+        </a-entity>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
