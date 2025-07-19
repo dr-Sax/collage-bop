@@ -10,7 +10,8 @@ from datetime import datetime
 class SimplifiedTracker:
     def __init__(self, config_file='marker_config.json'):
         # Setup
-        self.cap = cv2.VideoCapture(0)
+        self.cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
+        self.cap.set(cv2.CAP_PROP_FPS, 120)
         self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
         self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
