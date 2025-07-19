@@ -10,10 +10,9 @@ from datetime import datetime
 class SimplifiedTracker:
     def __init__(self, config_file='marker_config.json'):
         # Setup
-        self.cap = cv2.VideoCapture(1)
-        self.cap.set(cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'))
-        # self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-        # self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+        self.cap = cv2.VideoCapture(0)
+        self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+        self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
         # Verify the settings
         actual_width = self.cap.get(cv2.CAP_PROP_FRAME_WIDTH)
