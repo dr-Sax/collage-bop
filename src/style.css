@@ -1,0 +1,23 @@
+body { margin: 0; background: #000; font-family: Jazz LET, fantasy; overflow: hidden; }
+#start-screen { position: fixed; inset: 0; background: repeating-radial-gradient(farthest-corner at 40% 40%, rgb(162, 224, 28) .0099%, rgb(0, 0, 0) .01%);
+                display: flex; flex-direction: column; justify-content: center; align-items: center; 
+                z-index: 1000; color: white; }
+#start-button { background: rgba(255,255,255,0.2); border: 2px solid rgba(255,255,255,0.3); 
+                color: white; padding: 20px 40px; font: bold 18px Arial; border-radius: 50px; 
+                cursor: pointer; transition: all 0.3s; backdrop-filter: blur(10px); }
+#start-button:hover { background: rgba(255,255,255,0.3); transform: translateY(-2px); }
+#start-title { font-size: 100px; font-weight: bold; margin-bottom: 20px; }
+#start-subtitle { font-size: 18px; margin-bottom: 40px; opacity: 0.9; }
+#loading { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            color: white; background: rgba(0,0,0,0.8); padding: 20px; border-radius: 10px; z-index: 999; }
+.spinner { border: 3px solid rgba(255,255,255,0.3); border-top: 3px solid white; border-radius: 50%; 
+            width: 30px; height: 30px; animation: spin 1s linear infinite; margin: 0 auto 10px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+#status { position: fixed; top: 20px; left: 20px; background: rgba(0,0,0,0.8); color: white; 
+            padding: 15px; border-radius: 8px; font: 12px monospace; z-index: 100; min-width: 200px; }
+.connected { color: #4CAF50; }
+.disconnected { color: #f44336; }
+.status-row { display: flex; justify-content: space-between; margin: 2px 0; }
+.performance-good { color: #4CAF50; }
+.performance-warning { color: #FFC107; }
+.performance-bad { color: #f44336; }

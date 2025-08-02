@@ -1,0 +1,10 @@
+{
+  "1": {
+    "width": "512px",
+    "height": "288px",
+    "src": "https://www.youtube.com/embed/TbV7loKp69s?autoplay=1&loop=1&mute=1&playlist=TbV7loKp69s&controls=0&start=240&end=250",
+    "clip_path": "polygon(20.47% 31.46%, 45.31% 8.15%, 66.88% 19.10%, 60.55% 32.72%, 79.38% 23.03%, 61.48% 50.00%, 82.19% 50.70%, 48.52% 61.24%, 29.92% 59.55%, 35.63% 43.12%)",
+    "start": 240,
+    "end": 250
+  }
+}

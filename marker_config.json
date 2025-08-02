@@ -1,0 +1,106 @@
+{
+  "markers": {
+    "0": {
+      "width": "512px",
+      "height": "288px",
+      "src": "https://www.youtube.com/embed/FKolqjakq4w?autoplay=1&loop=1&mute=1&playlist=FKolqjakq4w&controls=0",
+      "clip_path": "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
+      "start":0,
+      "end":10,
+      "anim": {
+        "type": "morph",
+        "dur": 5,
+        "frames": [
+          "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
+          "polygon(30% 20%, 70% 20%, 80% 30%, 80% 70%, 70% 80%, 30% 80%, 20% 70%, 20% 30%)",
+          "circle(50% at 50% 50%)",
+          "polygon(30% 20%, 70% 20%, 80% 30%, 80% 70%, 70% 80%, 30% 80%, 20% 70%, 20% 30%)",
+          "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)"
+        ]
+      }
+    },
+    "1": {
+      "width": "512px",
+      "height": "288px",
+      "src": "https://www.youtube.com/embed/BLeMDG47k3I?autoplay=1&loop=1&mute=1&playlist=BLeMDG47k3I&controls=0",
+      "start":0,
+      "end":10,
+      "clip_path": "circle(40% at 50% 50%)",
+      "anim": {
+        "type": "breathe",
+        "dur": 3,
+        "shape": "circle(40% at 50% 50%)",
+        "amp": 0.4
+      }
+    },
+    "2": {
+      "width": "512px",
+      "height": "288px",
+      "src": "https://www.youtube.com/embed/7q_xD2yNhms?autoplay=1&loop=1&mute=1&playlist=7q_xD2yNhms&controls=0",
+      "clip_path": "polygon(50% 0%, 80% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 20% 38%)",
+      "start":0,
+      "end":10,
+      "anim": {
+        "type": "star",
+        "dur": 4,
+        "pts": 5,
+        "inner": 0.6
+      }
+    },
+    "3": {
+      "width": "665px",
+      "height": "665px",
+      "src": "https://www.youtube.com/embed/UPBdPLkS1pc?autoplay=1&loop=1&mute=0&playlist=UPBdPLkS1pc&controls=0",
+      "start":200,
+      "end":220,
+      "clip_path": "polygon(30.63% 16.99%, 12.81% 78.35%, 67.42% 66.92%, 30.78% 16.39%)"
+    },
+    "4": {
+      "width": "512px",
+      "height": "288px",
+      "src": "https://www.youtube.com/embed/hnE0AoqYKq4?autoplay=1&loop=1&mute=1&playlist=hnE0AoqYKq4&controls=0",
+      "clip_path": "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)",
+      "start":0,
+      "end":10,
+      "anim": {
+        "type": "morph",
+        "dur": 6,
+        "frames": [
+          "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)",
+          "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
+          "circle(45% at 50% 50%)",
+          "polygon(50% 10%, 90% 50%, 50% 90%, 10% 50%)",
+          "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)"
+        ]
+      }
+    },
+    "5": {
+      "width": "512px",
+      "height": "288px",
+      "src": "https://www.youtube.com/embed/V9yOql83H6c?autoplay=1&loop=1&mute=1&playlist=V9yOql83H6c&controls=0",
+      "start":0,
+      "end":10,
+      "clip_path": "circle(30% at 50% 50%)",
+      "anim": {
+        "type": "breathe",
+        "dur": 4,
+        "shape": "circle(30% at 50% 50%)",
+        "amp": 0.8
+      }
+    }
+  },
+  "default": {
+    "width": "512px",
+    "height": "288px",
+    "src": "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&loop=1&mute=1&playlist=dQw4w9WgXcQ&controls=0",
+    "start":0,
+    "end":10,
+    "clip_path": "circle(50% at 50% 50%)",
+    "anim": {
+      "type": "breathe",
+      "dur": 2,
+      "shape": "circle(50% at 50% 50%)",
+      "amp": 0.2
+    }
+  }
+}

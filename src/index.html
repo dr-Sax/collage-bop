@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AR Tracker - YouTube API</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/renderers/CSS3DRenderer.js"></script>
-    <style>
-        body { margin: 0; overflow: hidden; background: #000; font-family: Arial; }
-        #container { width: 100vw; height: 100vh; position: relative; }
-        #status { 
-            position: absolute; top: 10px; right: 10px; z-index: 100;
-            background: rgba(0,0,0,0.8); color: white; padding: 10px; border-radius: 5px; 
-        }
-        .connected { color: #0f0; }
-        .disconnected { color: #f00; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage-Bop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="dynamic_clip_paths.js"></script>
+    <div id="start-screen">
+        <div id="start-title">Collage-Bop</div>
+        <div id="start-subtitle">An Interactive Experience powered by Renaissance Box</div>
+        <button id="start-button">Start</button>
+    </div>
+    <div id="loading"><div class="spinner"></div><div>Loading...</div></div>
     <div id="container"></div>
     <div id="status">
-        Status: <span id="conn" class="disconnected">Disconnected</span><br>
-        Markers: <span id="markers">0</span> | Players: <span id="players">0</span>
+        <div class="status-row">
+            <span>Connection:</span>
+            <span id="conn" class="disconnected">Disconnected</span>
+        </div>
+        <div class="status-row">
+            <span>Markers:</span>
+            <span id="markers">0</span>
+        </div>
+        <div class="status-row">
+            <span>Players:</span>
+            <span id="players">0</span>
+        </div>
+        <div class="status-row">
+            <span>Update Rate:</span>
+            <span id="update-rate">0 fps</span>
+        </div>
+        <div class="status-row">
+            <span>Processing:</span>
+            <span id="processing-time">0ms</span>
+        </div>
+        <div class="status-row">
+            <span>Network Lag:</span>
+            <span id="network-lag">0ms</span>
+        </div>
     </div>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/renderers/CSS3DRenderer.js"></script>
+    <script type = "module" src="./viewer.js"></script>
 </body>
 </html>
