@@ -11,7 +11,7 @@ from datetime import datetime
 class OptimizedTracker:
     def __init__(self, config_file='marker_config.json'):
         # Camera Setup - optimized for speed
-        self.cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+        self.cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
         
         # More aggressive resolution optimization
         resolutions = [(320, 240), (424, 240), (640, 360), (640, 480)]

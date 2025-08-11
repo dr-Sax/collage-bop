@@ -1,4 +1,4 @@
- class Viewer {
+class Viewer {
     constructor() {
         this.ws = null;
         this.markers = new Map();
